@@ -1,0 +1,1017 @@
+/*
+Theme Name: HealthCare
+Theme URI: http://themewagon.com/demo/HealthCare/
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: A responsive theme for commercial medical purpose. Built with HTML5, CSS3, Bootstrap framework. Google fonts, Font Awesome Icon integrated
+Version: 1.1.2014.11
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: responsive layout, multiple-page, parallax 
+Text Domain:
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1. - Home
+        1.1 - heading-slider
+        1.2 - starting-text
+        1.3 - reason for choice
+        1.4 - testimonial
+ * 2. - Service
+ * 3. - Covid19
+        3.1 - sintomas-list
+
+ * 4. - Sobre
+ * -----------------------------------------------------------------------------
+ */
+
+ * {outline: none !important;}
+
+
+/*============================================Global============================================ */
+ul li
+{
+    list-style: none;
+    display: inline-block;
+}
+li a
+{
+    text-decoration: none;
+}
+.form-control, .input-group-addon
+{
+    border-radius: 0px;
+}
+.title
+{
+    padding: 50px 0px;
+    margin-top: 65px
+}
+a 
+{
+    color: darkcyan;
+}
+a:hover
+{
+    text-decoration: none;
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+.pagination
+{
+    border-radius: 0px;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: #F51E14;
+    border-color: #5FA8AB;
+}
+.pagination>li>a, .pagination>li>span {
+
+color: #085A6C;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+p
+{
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 3px;
+    font-size: 17px;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.send 
+{
+    margin-bottom: 20px;
+}
+
+.owl-pagination 
+{
+    display: none;
+}
+
+/* ----------------------------------------Header --------------------------------------------*/
+.section-title
+{
+    background: url(../img/6177817673_5ba53ffc2a_z.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    background-position: center;
+    color: #F0FEFF;
+}
+.section-title .headline
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.section-wrapper
+{
+    background-color: rgba(45, 53, 56, 0.78);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+
+
+.section-header{
+  font-size: 2em;
+  border-bottom: 1px dotted #ccc;
+  padding: 1em 0;
+}
+
+/* --------------------------------------  navs  ----------------------------------------------- */
+
+.logo
+{
+    font-family: 'Dosis', sans-serif;
+}
+.nav.navbar-nav 
+{
+    /* padding: 0px 20px; */
+}
+.navbar-default
+{
+    /*background-color: #267D90;*/
+    background-color: #F51E14;
+}
+.navbar-default .navbar-header .logo
+{
+    font-size: 32px;
+    color: #fff;
+}
+.navbar-nav li 
+{
+    /* border-right: 1px solid #54aec2; */
+    padding: 7px 0px;
+}
+.navbar-default .navbar-nav li a 
+{
+    text-shadow: 1px 1px 0px #20606D;
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active
+{
+    /*background-color: rgba(5, 207, 252, 0.62);*/
+    background-color: rgba(76, 214, 245, 0.62);
+    border-top: 4px ridge rgb(5, 207, 252);
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus 
+{
+    color: #fff;
+}
+li:last-child 
+{
+    border-right: transparent;
+}
+.navbar-default .navbar-nav>li:hover, .navbar-default .navbar-nav>li:focus {
+    background-color: #377F8F;
+    color: white;
+    border-bottom: 4px ridge rgb(5, 207, 252);
+}
+.navbar-fixed-top .navbar-collapse
+{
+    /* max-height: 415px; */
+}
+.container-fluid 
+{
+    margin-left: 20px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+{
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active:hover 
+{
+    background-color: rgba(5, 207, 252, 0.62);
+    border-bottom: none;
+}
+
+/* -------------------------------------------Sidebar------------------------------------------- */
+.blog-content aside .widget, .faq-content aside .widget
+{
+    margin-bottom: 40px;
+}
+.widget h4, 
+{
+    background: url("../img/title-bg.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.widget.widget_iw_last_posts h5 
+{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.widget h4 span, .special-posto h2 span
+{
+    background: white;
+    padding-right: 10px;
+}
+.widget h5 
+{
+    text-transform: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.widget ul 
+{
+    padding-left: 0;
+    list-style: none;
+}
+.widget ul li 
+{
+    border-bottom: 1px solid #f3f3f3;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+    display: block;
+    padding: 10px 20px 10px 0;
+    position: relative;
+}
+.widget ul li:hover 
+{
+    background: #f8f8f8;
+    padding-left: 10px;
+}
+.widget ul li:hover a
+{
+    text-decoration: none;
+}
+.widget ul li:before 
+{
+    color: #646464;
+    content: "\f0da";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    font-size: 11px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.widget.widget_tag_cloud .tagcloud a 
+{
+    background-color: #eaeaea;
+    border: 1px solid #f3f3f3;
+    padding: 5px 10px;
+    margin: 0 3px 8px 0;
+    font-size: 14px !important;
+    display: inline-block;
+}
+
+/* ------------------------------------   appointment  ----------------------------------------- */
+
+.appointment
+{
+    background-color: #e6e6e6;
+}
+.appointment .header 
+{
+    background-color: #F51E14
+    min-height: 99px;
+    height: auto !important;
+    padding: 10px 23px 0px;
+    margin: 0px 0px 30px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(0,0,0,0)));
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+}
+.appointment .header h2, .appointment .header .number 
+{
+    text-shadow: 1px 1px 0px #20606D;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: normal;
+}  
+.appointment .header a i
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: #6DBEC2;
+    color: white;
+    padding-top: 3px;
+    padding-left: 6px;
+}
+.appointment .header .or 
+{
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: url(../img/or-bg.png) center center no-repeat; 
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    top: 17px;
+}
+.captcha-container 
+{
+    margin: 0 0 20px;
+}
+.captcha-container img 
+{
+    vertical-align: top;
+    margin: 10px 0px;
+}
+.appointment .input-group
+{
+    padding: 10px 0px;
+}
+
+/* ========================================= 1. Home============================================= */
+
+
+/* -------------------------------------- 1.1 heading-slider---------------------------------------- */
+.slider-inner 
+{
+    /*background-color: rgba(21, 7, 7, 0.55);*/
+    background-color: rgba(51, 71, 90, 0.32);
+    width: 100%;
+    color: white;
+    height: 700px;
+}
+.slider-inner-text
+{
+    margin: 262px 0px;
+    width: 50%
+}
+.slider-1
+{
+    background: url(../img/Covid-19.jpg);
+    width: 100%;
+    background-size: cover;
+    vertical-align: middle;
+    background-position-x: 75%;
+    background-position-y: 5%;
+}
+.slider-2
+{
+    background: url(../img/Covid-192.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 65%;
+    background-position-y: 5%;
+}
+.slider-3
+{
+    background: url(../img/Covid-193.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 75%;
+    background-position-y: 5%;
+}
+.slider-inner h1 
+{
+    margin-bottom: 35px;
+    font-size: 70px;
+}
+.slider-inner-text p
+{
+    font-size: 23px;
+}
+/*---------------------------------------------- 1.2 starting-text ----------------------------------*/
+
+section.starting-text 
+{
+    background-color: rgba(213, 37, 9, 0.82);
+    /*background: -webkit-linear-gradient(left top, #085A6C , #3E8B90);
+    background: -o-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: -moz-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: linear-gradient(to bottom right, #085A6C , #3E8B90); */
+    margin-top: -37px;
+}
+.welcome 
+{
+    padding: 48px 68px;
+    text-align: center;
+}
+.welcome-title 
+{
+    font-size: 50px;
+    padding-bottom: 15px;
+    /*color: #B0FFF6;*/
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #083944;
+}
+.welcome-txt 
+{
+    font-size: 18px;
+    color: #fff;
+    line-height: 35px;
+    margin-bottom: 26px;
+    padding-top: 26px;
+    letter-spacing: 1px;
+}
+.welcome-btn
+{
+    background-color: #fff;
+    margin-top: 20px;
+    color: #F51E14;
+    border-radius: 0px;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+    padding: 13px 20px;
+    border: 2px solid #fff;
+}
+.welcome-btn:hover 
+{
+    color: white;
+    background-color: #F51E14;
+}
+/* ========================================= 2. Service=========================================== */
+.posto-title
+{
+    background: url(../img/postodesaude.png);
+    background-size: cover;
+    vertical-align: middle;
+    background-position: top;
+    
+}
+.posto-title .headline 
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.posto-wrapper
+{
+    /*background-color: rgba(45, 53, 56, 0.28);*/
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+.posto
+{
+    padding: 40px 20px;
+    transition: all 0.5s ease 0s;
+}
+.featured-posto-content 
+{
+    margin: 40px 0px;
+}
+.posto .posto-icon i
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px solid #6DBEC2;
+    background: #fff;
+    color: #6DBEC2;
+    padding-top: 38px;
+    transition: all 0.7s ease 0s;
+}
+.about-posto h3 
+{
+    padding: 12px 0px;
+    color: darkcyan;
+}
+
+.about-posto p 
+{
+    padding: 0px 10px;
+}
+.posto:hover .posto-icon i
+{
+    color: white;
+    background-color: #6DBEC2;
+}
+.posto:hover .about-posto h3
+{
+    color: #02A2B6;
+}
+.special-posto
+{
+    margin-top: 50px;
+}
+.posto-tab 
+{
+    margin-top: 50px;
+}
+
+.posto-item 
+{
+    padding: 30px 0px;
+}
+.posto-item img 
+{
+    margin-bottom: 30px;
+}
+.posto-item h3 
+{
+    color: darkcyan;
+    margin-top: 0px;
+}
+.posto-item p 
+{
+    line-height: 25px;
+    padding: 10px 0px;
+}
+.special-posto h2
+{
+    background: url("../img/title-bg.png") repeat-x scroll 0 13px rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.sub-headline 
+{
+    padding: 15px 0px 40px 0px;
+    font-size: 24px;
+}
+.headline 
+{
+    padding-top: 45px;
+    font-size: 45px;
+}
+.posto-rm-btn
+{
+    background-color: transparent;
+    color: #F51E14;
+    border-radius: 0px;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+    padding: 5px 12px;
+    margin: 4px 0px 0px 5px;
+    border-color: #F51E14;
+}
+.posto-rm-btn:hover
+{
+    /* background-color: #F51E14; */
+    background-color: rgb(0, 139, 168);
+    color: #fff;
+    border-color: #3A90CD;
+}
+
+/* ========================================= 3. Covid19============================================ */
+
+/* ------------------------------------------  3.1 sintomas-list --------------------------------- */
+.team-button {
+    margin-top: -60px;
+}
+#starting
+{
+    background: url(../img/sintomas-img.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width:1100px){
+
+    .starting-wrapper {
+    height: 500px;
+    }
+}
+.starting-wrapper
+{
+    background-color: rgba(0,0,0,0.17);
+    padding: 208px 0px;
+    color: #fff;
+}
+.main-title {
+    background-color: rgb(47, 79, 79);
+    display: inline-block;
+    padding: 23px 70px;
+    float: right;
+}
+.sub-title 
+{
+    padding: 30px;
+    float: right;
+    background-color: darkslategrey;
+}
+.sintomas-list
+{
+    padding-top: 100px;
+}
+.sintomas-meta
+{
+    margin: 100px 0px 70px 0px;
+    padding: 120px 35px 36px;
+    border: 1px solid rgba(59, 77, 116, 0.29);
+    background-color: rgba(92, 145, 216, 0.27);
+    position: relative;
+}
+.sintomas-meta .sintomas-img
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: -95px;
+    border: 2px solid #c6c6c6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sintomas-meta .sintomas-img img
+{
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.sintomas-info .sintomas-name
+{
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.sintomas-info .position
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1px;
+}
+.sintomas-info .sintomas-des
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.sintomas-info .sintomas-social .online-contact a
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background: cadetblue;
+    float: left;
+    color: white;
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+
+
+
+/* ========================================= 4. Sobre========================================== */
+.sobre-title
+{
+    background: url(../img/quemsomos.png);
+    background-size: repeat;
+    vertical-align: middle;
+    color: #F0FEFF;
+    background-position: center;
+}
+.sobre-title .headline
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.sobre-wrapper
+{
+    background-color: rgba(45, 53, 56, 0.71);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+.sobre-content
+{
+    margin-top: 100px;
+}
+#caixa-de-texto
+{
+    width: 100%;
+    height: 460px;
+}
+.quick-sobre i 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6DBEC2;
+    color: white;
+    padding-top: 12px;
+    padding-left: 14px;
+    font-size: 25px;
+}
+.quick-sobre span 
+{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.quick-sobre span 
+{
+    color: rgb(73, 77, 123);
+}
+.quick-sobre {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.msg-form
+{
+    padding: 20px 16px;
+}
+.msg-form .input-group
+{
+    display: inline-table;
+    padding: 20px 0px;
+}
+.panel-default{
+    border: none;
+    box-shadow: none;
+    margin-bottom: 3rem;
+}
+.panel-title{
+	.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+	width: 200%;
+}
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+	color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+	width: 200%;
+}
+/* ============================================5. Vacinas=========================================== */
+.vacina-title
+{
+    background: url(../img/vacina.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    color: #F0FEFF;
+    background-position: center bottom;
+}
+.vacina-title .headline
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.vacina-wrapper
+{
+    background-color: rgba(45, 53, 56, 0.41);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+.vacina-vacina
+{
+    margin-top: 100px;
+}
+#caixa-de-texto
+{
+    width: 100%;
+    height: 460px;
+}
+.quick-vacina i 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6DBEC2;
+    color: white;
+    padding-top: 12px;
+    padding-left: 14px;
+    font-size: 25px;
+}
+.quick-vacina span 
+{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.quick-vacina span 
+{
+    color: rgb(73, 77, 123);
+}
+.quick-vacina {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.msg-form
+{
+    padding: 20px 16px;
+}
+.msg-form .input-group
+{
+    display: inline-table;
+    padding: 20px 0px;
+}
+.panel-default{
+    border: none;
+    box-shadow: none;
+    margin-bottom: 3rem;
+}
+.panel-title{
+	.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+	width: 200%;
+}
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+	color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+	width: 200%;
+}
+.special-vacine-content {
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+	
+}
+.vacine-content {
+	font-size: 70px;
+    word-spacing: 10px;
+	
+}
+.row-vacine{
+	aling-content: center;
+}
+
+
+
+/* ============================================Footer=========================================== */
+
+#footer
+{
+    /*background-color: #085A6C;*/
+    background-color: #F51E14;
+    /*background: -webkit-linear-gradient(left top, #085A6C , #3E8B90);
+    background: -o-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: -moz-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: linear-gradient(to bottom right, #085A6C , #3E8B90); */
+    padding: 25px 0px;
+}
+.copy-right-text
+{
+    color: #fff;
+    font-size: 13px;
+    padding-top: 25px;
+}
+
+.copy-right-text a {
+    color: #AFEEEE;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.copy-right-text a:hover {
+    color: #064B6D;
+}
+
+
+/* ----------------------------------- social media -------------------------------------------- */
+
+.contact 
+{
+    padding-top: 10px;
+    padding-left: 0px;
+}
+li.socials-icons 
+{
+    padding-left: 20px;
+}
+.socials-icons a
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* background: #6DBEC2; */
+    background-color: #49C1DC;
+    float: left;
+    color: white;
+    padding-top: 3px;
+    font-size: 20px;
+}
+.facebook:hover
+{
+    background-color: #46629E;
+    box-shadow: 0 0 0 2px #46629E;
+    color: white;
+}
+.twitter:hover
+{
+    background-color: #0EAACE;
+    box-shadow: 0 0 0 2px #0EAACE;
+    color: white;
+}
+.google-plus:hover
+{
+    background-color: #AF0000;
+    box-shadow: 0 0 0 2px #AF0000;
+    color: white;
+}
+.instagram:hover
+{
+    background-color: #3f729b;
+    box-shadow: 0 0 0 2px #3f729b;
+    color: white;
+}
+.pinterest:hover
+{
+    background-color: #CB2027;
+    box-shadow: 0 0 0 2px #CB2027;
+    color: white;
+}
+.skype:hover
+{
+    background-color: #01AEF2;
+    box-shadow: 0 0 0 2px #01AEF2;
+    color: white;
+}
+
+/* =========================================Media Query========================================= */
+
+@media (min-width: 1200px){
+    .navbar-collapse.collapse 
+    {
+        display: block!important;
+        height: auto!important;
+        /* padding: 10px 0px; */
+        overflow: visible!important;
+    }
+}
+    
+@media (min-width: 1200px){
+    .navbar-collapse 
+    {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 991px){
+    .slider-inner-text {
+        margin: 162px 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .slider-inner-text {
+        margin: 162px 58px;
+        width: 62%;
+    }
+}
+
+@media (max-width: 505px){
+    section.content main .info li:not(:last-child) 
+    {
+        margin: 0 27px 10px 0;
+    }   
+    section.content main .info li 
+    {
+        border: 0 !important;
+        display: inline;
+        margin: 0;
+        padding: 0px;
+    }
+    .slider-inner h1{
+        font-size: 50px;
+    }
+    .slider-inner-text {
+        margin: 162px 13px;
+    }
+    .slider-inner-text p
+    {
+        font-size: 19px;
+    }
+    .welcome {
+        padding: 48px 20px;
+    }
+}
+@media(max-width: 319px) {
+    .heading-slider {
+        display: none;
+    }
+}
