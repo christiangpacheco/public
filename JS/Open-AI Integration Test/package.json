@@ -1,0 +1,20 @@
+{
+  "name": "chatbot-openai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Christian Groff Pacheco",
+  "url": "https://github.com/PachecoChristian",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^6.8.0"
+  }
+}

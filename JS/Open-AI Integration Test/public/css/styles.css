@@ -1,0 +1,154 @@
+:root {
+  --bg: #f5f8fb;
+  --card: #ffffff;
+  --text: #1f2430;
+  --muted: #6b7280;
+  --primary: #0056b3;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+.site-header {
+  padding: 32px 20px 10px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+.site-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto 60px;
+  padding: 0 20px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 220px));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.control {
+  display: grid;
+  gap: 6px;
+}
+
+.control label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.control select {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+  transition: transform .15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #e6eef8;
+  color: #003366;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  margin: 4px 0 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.button.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.button.ghost {
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--muted);
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 720px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}

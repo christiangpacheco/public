@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vitrine de Cursos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/chat.css" />
+</head>
+
+<body class="">
+  <header class="site-header">
+    <h1>Vitrine de Cursos</h1>
+    <p>Confira abaixo os cursos disponíveis no chatbot.</p>
+  </header>
+  <main class="container">
+    <section class="controls">
+      <div class="control">
+        <label for="filtroArea">Área</label>
+        <select id="filtroArea">
+          <option value="">Todas</option>
+          <option value="TI">TI</option>
+          <option value="Administração">Administração</option>
+          <option value="Saúde">Saúde</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="filtroNivel">Nível</label>
+        <select id="filtroNivel">
+          <option value="">Todos</option>
+          <option value="graduacao">Graduação</option>
+          <option value="pos">Pós</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="ordenarPor">Ordenar</label>
+        <select id="ordenarPor">
+          <option value="nome-asc">Nome (A→Z)</option>
+          <option value="nome-desc">Nome (Z→A)</option>
+          <option value="preco-asc">Preço (menor→maior)</option>
+          <option value="preco-desc">Preço (maior→menor)</option>
+        </select>
+      </div>
+
+    </section>
+    <section id="catalog" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 — Vitrine de Cursos</small>
+  </footer>
+  <!--<button id="key-config-btn">
+      <span class="material-symbols-outlined">settings</span>
+    </button>-->
+  <button class="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+
+  <div class="chatbot">
+    <header>
+      <h2>ChatBot Test</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message" required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+
+  <script src="./js/chat.js" defer></script>
+  <script src="./js/shop.js" defer></script>
+</body>
+
+</html>
