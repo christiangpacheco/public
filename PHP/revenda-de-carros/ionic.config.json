@@ -1,0 +1,8 @@
+{
+  "name": "Revenda de Carros",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "8690fb0d"
+}
